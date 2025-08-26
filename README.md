@@ -17,9 +17,9 @@ This project combines:
 ## 🏗️ Architecture & Workflow
 ```mermaid
 flowchart TD
-    A[Input PDF] --> B[PDF Text Extraction (PyMuPDF + OCR)]
-    B --> C[Heading Detection (Font/Size/Bold Rules)]
+    A[Input PDF] --> B[PDF Text Extraction - PyMuPDF + OCR]
+    B --> C[Heading Detection - Font/Size/Bold Rules]
     C --> D[Chunking into Table Dictionary]
     D --> E[Stringify Tables for LLM]
-    E --> F[ZeroShotLLM Wrapper (Nemotron-253B API)]
+    E --> F[ZeroShotLLM Wrapper - Nemotron 253B API]
     F --> G[Clean Answer]
